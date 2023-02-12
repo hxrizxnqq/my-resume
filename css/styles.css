@@ -8,8 +8,8 @@ body {
     display: flex;
     flex-direction: row-reverse;
     background: #ffffff;
-    width: 1200px;
-    height: 1319px;
+    width: 1000px;
+    height: 1300px;
     margin: 0 auto;
     box-shadow: 0 4px 4px #0000003F;
 }
@@ -122,12 +122,11 @@ body {
     font-weight: 400;
     font-size: 12px;
     line-height: 15px;
-    margin-bottom: 12px 0 8px 0;
+    margin: 12px 0 8px 0;
     color: #ABABAB;
 }
 
 .work-duties-list {
-
     padding: 0 0 0 18px;
     margin: 0;
 }
@@ -151,7 +150,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    margin: 16px 0 0 0;
+    margin: 12px 0 8px 0;
     color: #516d5a;
 }
 
@@ -160,7 +159,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 17px;
-    margin: 12px 0 12px 0;
+    margin: 12px 0 8px 0;
     color: #000000;
 }
 
@@ -175,6 +174,7 @@ body {
 
 /* Сайдбар */
 .sidebar {
+    width: 300px;
     background: #cfe3c6;
     box-shadow: 3px 0 10px #b1baca;
 }
