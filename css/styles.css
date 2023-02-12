@@ -127,6 +127,7 @@ body {
 }
 
 .work-duties-list {
+
     padding: 0 0 0 18px;
     margin: 0;
 }
@@ -150,7 +151,7 @@ body {
     font-weight: 700;
     font-size: 16px;
     line-height: 20px;
-    margin: 0;
+    margin: 16px 0 0 0;
     color: #516d5a;
 }
 
@@ -174,7 +175,6 @@ body {
 
 /* Сайдбар */
 .sidebar {
-    width: 380px;
     background: #cfe3c6;
     box-shadow: 3px 0 10px #b1baca;
 }
