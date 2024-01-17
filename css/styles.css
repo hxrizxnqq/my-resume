@@ -247,3 +247,9 @@ body {
     line-height: 24px;
     color: #161d2a;
 }
+
+.footer {
+  display: flex;
+  margin: 50vh 0;
+  justify-content: center;
+}
