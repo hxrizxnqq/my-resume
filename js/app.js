@@ -1,2 +1,2 @@
 const footerHover = document.getElementsById(footer)
-alert(footerHover)
+console.log(footerHover)
