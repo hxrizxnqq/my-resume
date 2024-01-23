@@ -1,3 +1,3 @@
 function hideFooter () {
-    document.getElementsByClassName("footer").hidden = true
+    document.getElementsById("footer").hidden = true
 }
