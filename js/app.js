@@ -1,3 +1,3 @@
 function hideFooter () {
-    document.getElementsById("footer").hidden = true
+    document.getElementsById("footer").styles.display = 'none'
 }
