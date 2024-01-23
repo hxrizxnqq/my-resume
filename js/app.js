@@ -1,2 +1,3 @@
-const footerHover = document.getElementsById(footer)
-console.log(footerHover)
+function hideFooter () {
+    document.getElementsByClassName("footer").hidden = true
+}
