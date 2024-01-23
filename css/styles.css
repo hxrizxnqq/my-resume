@@ -68,6 +68,8 @@ body {
 .project-list {
     padding: 0 0 0 18px;
     margin: 0;
+    list-style: none;
+    counter-reset: list-projects;
 }
 
 .project-item {
@@ -76,7 +78,18 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: #000000;
+
+    display: grid;
+    grid-template-columns: auto 190px 300px;
 }
+
+.project-list > .project-item {
+    counter-increment: list-projects;
+}
+.project-list .project-item:before {
+    content: counter(list-projects) ". ";
+}
+
 
 .project-item-link {
     font-style: normal;
@@ -93,6 +106,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     color: #595959;
+    text-align: end;
 }
 
 /* Робочий досвід */
@@ -190,6 +204,7 @@ body {
 
 .photoresume {
     margin-top: 40px;
+    filter: blur(5px);
 }
 
 .contacts-container,
