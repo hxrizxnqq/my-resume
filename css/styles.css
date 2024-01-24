@@ -1,13 +1,53 @@
+
+
 body {
-    background-color: #E5E5E5;
+    background-color: var(--bg);
     padding: 40px;
     font-family: 'Montserrat', sans-serif;
+
+    /* colors */
+    --bg: #E5E5E5;
+    --wrapper: #ffffff;
+    --sidebar: #cfe3c6;
+
+    --maintext: #000000;
+    --subtitle: #516d5a;
+    --subtext: #595959;
+    --subdescription: #ABABAB;
+    --links: #438058;
+    --sidebarlinks: #438058; 
+    --linkhover: #38a158;
+    --sidebartitle: #162a1d;
+    --sidebarsubtext: #161d2a;
+    --emailhover: #024219;
+
+    --sidebarshadow: #8ead8f;
+    transition: 500ms;
+}
+
+body.theme-dark {
+    --bg: #1a1a1a;
+    --wrapper: #272727;
+    --sidebar: #628853;
+
+    --maintext: #ffffff;
+    --subtitle: #516d5a;
+    --subtext: #dfdfdf;
+    --subdescription: #A8A8A8;
+    --links: #438058;
+    --sidebarlinks: #024219; 
+    --linkhover: #38a158;
+    --sidebartitle: #162a1d;
+    --sidebarsubtext: #161d2a;
+    --emailhover: #01270f;
+
+    --sidebarshadow: #347447;
 }
 
 .wrapper {
     display: flex;
     flex-direction: row-reverse;
-    background: #ffffff;
+    background: var(--wrapper); /* #ffffff */
     width: 1000px;
     height: 1300px;
     margin: 0 auto;
@@ -25,7 +65,7 @@ body {
     font-size: 22px;
     line-height: 27px;
     margin: 0 0 8px 0;
-    color: #000000;
+    color: var(--maintext); /* #0000000 */
 }
 
 /* Про мене */
@@ -39,7 +79,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     margin: 0 0 18px 0;
-    color: #000000;
+    color: var(--maintext); /* #0000000 */
 }
 
 .my-name {
@@ -48,7 +88,7 @@ body {
     font-size: 45px;
     line-height: 55px;
     margin: 0 0 28px 0;
-    color: #000000;
+    color: var(--maintext); /* #0000000 */
 }
 
 .my-description {
@@ -57,7 +97,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #595959;
+    color: var(--subtext); /* #595959 */
 }
 
 /* Мої проекти */
@@ -77,7 +117,7 @@ body {
     font-weight: 700;
     font-size: 14px;
     line-height: 24px;
-    color: #000000;
+    color: var(--maintext);
 
     display: grid;
     grid-template-columns: auto 190px 300px;
@@ -90,14 +130,17 @@ body {
     content: counter(list-projects) ". ";
 }
 
-
 .project-item-link {
     font-style: normal;
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
     text-decoration: underline;
-    color: #005FFF;
+    color: var(--links); /* #005FFF */
+}
+
+.project-item-link:hover {
+    color: var(--linkhover); /* #4069af */
 }
 
 .project-item-description {
@@ -105,7 +148,7 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #595959;
+    color: var(--subtext); /* #595959 */
     text-align: end;
 }
 
@@ -124,11 +167,11 @@ body {
     font-size: 16px;
     line-height: 20px;
     margin: 0;
-    color: #000000;
+    color: var(--maintext); /* #000000 */
 }
 
 .work-experience-company {
-    color: #516d5a;
+    color: var(--subtitle) ; /* #516d5a */
 }
 
 .work-period {
@@ -137,7 +180,7 @@ body {
     font-size: 12px;
     line-height: 15px;
     margin: 12px 0 8px 0;
-    color: #ABABAB;
+    color: var(--subdescription); /* #ABABAB */
 }
 
 .work-duties-list {
@@ -150,12 +193,12 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #595959;
+    color: var(--subtext);
 }
 
 .intersection {
     font-weight: 400;
-    color: #000000;
+    color: var(--maintext);
 }
 
 /* Освіта */
@@ -165,7 +208,7 @@ body {
     font-size: 16px;
     line-height: 20px;
     margin: 12px 0 8px 0;
-    color: #516d5a;
+    color: var(--subtitle); /* #516d5a */
 }
 
 .education-area {
@@ -174,7 +217,7 @@ body {
     font-size: 14px;
     line-height: 17px;
     margin: 12px 0 8px 0;
-    color: #000000;
+    color: var(--maintext);
 }
 
 .education-period {
@@ -183,14 +226,14 @@ body {
     font-size: 12px;
     line-height: 15px;
     margin: 0;
-    color: #A8A8A8;
+    color: var(--subdescription); /* #A8A8A8 */
 }
 
 /* Сайдбар */
 .sidebar {
     width: 300px;
-    background: #cfe3c6;
-    box-shadow: 3px 0 10px #b1baca;
+    background: var(--sidebar); /* #cfe3c6 */
+    box-shadow: 2px 0 5px var(--sidebarshadow); /* #b1baca */ 
 }
 
 .sidebar-title {
@@ -199,7 +242,7 @@ body {
     font-size: 22px;
     line-height: 27px;
     margin-bottom: 8px;
-    color: #162a1d;
+    color: var(--sidebartitle); /* #162a1d */
 }
 
 .photoresume {
@@ -220,7 +263,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     margin-right: 4px;
-    color: #162a1d;
+    color: var(--sidebartitle); /* #162a1d */
 }
 
 .contacts-item {
@@ -233,7 +276,7 @@ body {
     font-size: 14px;
     line-height: 24px;
     text-decoration: none;
-    color: #162a1d;
+    color: var(--verydarkgreen); /* #162a1d */
 }
 
 .contacts-email {
@@ -241,7 +284,11 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #438058;
+    color: var(--sidebarlinks); /* #438058 */
+}
+
+.contacts-email:hover {
+    color: var(--emailhover); /* #024219 */
 }
 
 /* Технічні / Гнучкі скіли */
@@ -252,7 +299,7 @@ body {
 }
 
 .skills-list-item {
-    color: #516d5a;
+    color: var(--subtitle); /* #516d5a */
 }
 
 .skills-list-text {
@@ -260,11 +307,9 @@ body {
     font-weight: 400;
     font-size: 14px;
     line-height: 24px;
-    color: #161d2a;
+    color: var(--sidebarsubtext); /* #161d2a */
 }
 
-.footer {
-  display: flex;
-  margin: 50vh 0;
-  justify-content: center;
+#theme-switch {
+    text-align: center;
 }
