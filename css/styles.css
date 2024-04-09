@@ -233,7 +233,7 @@ body.theme-dark {
 .sidebar {
     width: 300px;
     background: var(--sidebar); /* #cfe3c6 */
-    box-shadow: 2px 0 5px var(--sidebarshadow); /* #b1baca */ 
+    box-shadow: 2px 0 2px var(--sidebarshadow); /* #b1baca */ 
 }
 
 .sidebar-title {
